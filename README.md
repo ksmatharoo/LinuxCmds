@@ -15,7 +15,9 @@ $dpkg -L libsdl2-2.0-0
 **change ubuntu resolution**
   
 cvt 1600 900
+  
 xrandr --newmode "1600x900_60.00"  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync
+
 xrandr --addmode eDP-1 1600x900_60.00
 
 **// go to previous dir**
@@ -32,6 +34,7 @@ $ popd  // will take you to /etc
 **send process to backgound**
   
 $ ctrl + z // send process to baclgound
+  
 $ fg // bring process to foregroud
 
 
@@ -45,16 +48,24 @@ $ history  //show list of previous cmds ran on system
 $ HISTTIMEFORMAT='%d/%m/%y %T'  // variable to print the history with time and date
 
 HISTTIMEFORMAT='%d/%m/%y %T' 
+  
 HISTSIZE = 1000                       // history file size
+  
 HISTFILE = ~/.bash_history            // history file name
+  
 HISTIGNORE = "ls*"
+  
 HISTIGNORE = "[ \t]*"
+  
 add "[ \t]*" to your HISTIGNORE variable you can make any command be ignored by starting it with a space.
 
 
 102  cd -
+  
 103  pwd
+  
 104  cd /var
+  xrandr --newmode "1600x900_60.00" 118.25 1600 1696 1856 2112 900 903 908 934 -hsync +vsync xrandr --addmode eDP-1 1600x900_60.00
 105  fg
 
 $ !102  //this will execute the cmd from history at index 102
