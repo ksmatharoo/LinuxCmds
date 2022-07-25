@@ -1,0 +1,10 @@
+Probabilistic Data Structures 
+
+Problem check if the user name you are going to create on gmail like service already exist or not?
+    Bloom Filters (bitset with more than one hash function)
+    
+ Problem count unique visiter on the google like website? 
+    Hyper Log Log (name is based on the space complexity log(log(m)))
+  
+    Count-Min Sketches
+    T-digests (Bonus)
