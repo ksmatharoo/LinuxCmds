@@ -1,10 +1,10 @@
 # LinuxCmds
 
-# check given port is used by which process 
-sudo lsof -i -P -n | grep <port no>
+# check given port(portNo) is used by which process 
+sudo lsof -i -P -n | grep portNo
 
-# check given process use which all ports
-sudo lsof -aPi -p <PID>
+# check given process(pid) use which all ports
+sudo lsof -aPi -p PID
 
 # check file is used by which process
 sudo lsof /var/lib/dpkg/lock-frontend
