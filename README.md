@@ -9,13 +9,19 @@ sudo lsof -aPi -p PID
 # check file is used by which process
 sudo lsof /var/lib/dpkg/lock-frontend
 
-**#locate installed package files**
+# check the process info 
+ps -ef | grep java
+
+# check the portinfo 
+netstat -an | grep 8080
+
+# locate installed package files
 
 $dpkg -L <package-name>  
 for eg.
 $dpkg -L libsdl2-2.0-0
 
-**change ubuntu resolution**
+# change ubuntu resolution
   
 cvt 1600 900
   
@@ -23,11 +29,11 @@ xrandr --newmode "1600x900_60.00"  118.25  1600 1696 1856 2112  900 903 908 934 
 
 xrandr --addmode eDP-1 1600x900_60.00
 
-**// go to previous dir**
+# go to previous dir
   
 $ cd - 
 
-**  //this is stack **
+** //this is stack **
   
 $ pushd /var
 /var /etc   
