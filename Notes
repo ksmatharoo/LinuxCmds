@@ -8,3 +8,7 @@ Problem check if the user name you are going to create on gmail like service alr
   
     Count-Min Sketches
     T-digests (Bonus)
+    
+    
+ Spark DDL create statment for complex type 
+ CREATE TABLE test (name STRUCT<first: STRING, last: STRING>,age INT,gender STRING)
