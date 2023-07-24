@@ -1,0 +1,8 @@
+problem : Malformed \uxxxx encoding issue 
+
+solution: grep -lrnw  ~/.m2 -e '\u0000' | xargs rm
+
+Problem: Maven error, PKIX path building failed: unable to find valid certification path to requested target
+
+Solution: mvn clean package -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+or add "-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" in vmoptions in intellJ
