@@ -1,0 +1,5 @@
+if kafka broker is down then kafka consumer will keep on pooling will never crash
+
+23/08/09 12:23:39 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-12c736e5-9bf3-4e3a-891a-ad0aae910ec5--702734442-driver-0-1, groupId=spark-kafka-source-12c736e5-9bf3-4e3a-891a-ad0aae910ec5--702734442-driver-0] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+
+KafkaConsumer polling for broker: awaitMetadataUpdate() in ConsumerNetworkClient.java in package org.apache.kafka.clients.consumer.internals;
