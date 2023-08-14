@@ -1,0 +1,32 @@
+#create profile(testProfile)
+aws s3 ls --profile <profileName>
+$ aws s3 ls --profile testProfile
+
+You will be prompted to enter the following information for the new profile:
+
+1. AWS Access Key ID: Enter the Access Key ID associated with the AWS account you want to use.
+2. AWS Secret Access Key: Enter the Secret Access Key corresponding to the provided Access Key ID.
+3. Default region name: Enter the AWS region you want to use as the default for this profile (e.g., us-east-1, eu-west-1, etc.).
+4. Default output format: Enter the desired output format for AWS CLI commands (e.g., json, text, table, etc.).
+   Once you've entered the required information, the profile will be created, and the settings will be saved in a configuration file on your system.
+   The file is typically located at ~/.aws/config on Linux and macOS, and C:\Users\<username>\.aws\config on Windows.
+
+You can now use the newly created profile by specifying the --profile parameter with your AWS CLI commands. For example:
+
+#use this profile
+$ aws --endpoint-url <custom-endpoint-url> --profile testProfile s3 ls s3://<bucket-name>/<object-key>
+
+-List buckets: 
+$ aws s3 ls
+
+-Upload a file: 
+$ aws s3 cp <local-file> s3://<bucket-name>/<object-key>
+
+-Download a file: 
+$ aws s3 cp s3://<bucket-name>/<object-key> <local-file>
+
+-List objects in a bucket: 
+$ aws s3 ls s3://<bucket-name>
+
+-Delete an object: 
+$ aws s3 rm s3://<bucket-name>/<object-key>
